@@ -1,4 +1,4 @@
-#### C5 Software Engineering Lecture Backpack
+## C5 Software Engineering Lecture Backpack
 
 Welcome to the C5 Software Engineering Lecture Backpack. This is where you will be able to find all the content covered in each session every week.
 
