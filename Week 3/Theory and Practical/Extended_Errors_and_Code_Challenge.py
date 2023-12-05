@@ -74,7 +74,7 @@ END
 #         print("Halfway :)")
 
 
-string = "myMu"
+string = "SWaPmE"
 new = ""
 for letter in range(len(string)):
     # Swap lower to upper and vice versa    
