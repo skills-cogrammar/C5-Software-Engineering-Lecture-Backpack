@@ -1,23 +1,27 @@
 # Try-Except Example
 
-def divide_numbers(a, b):
-    try:
-        result = a / b
-        print("Result:", result)
-    except ZeroDivisionError:
-        print("Error: Cannot divide by zero.")
-    except TypeError:
-        print("Error: Invalid data type for division.")
-    except Exception as e:
-        print("An unexpected error occurred:", e)
-    finally:
-        print("This block always executes, regardless of exceptions.")
+a = 0
+b = 0
 
-# Valid division
-divide_numbers(10, 2)
+try: # Try this:
+    result = a / b
+    print("Result:", result)
+except ZeroDivisionError:
+    print("Error: Cannot divide by zero.")
+except TypeError:
+    print("Error: Invalid data type for division.")
+except Exception as e:
+    print("An unexpected error occurred:", e)
+finally:
+    print("This block always executes, regardless of exceptions.")
 
-# Division by zero
-divide_numbers(5, 0)
 
-#Invalid data type
-divide_numbers("10", 2)
+# Raise in try-except
+try:
+    age = int(input("Please enter your age: "))
+    if age < 0:
+        # raise a ValueError with a custom error message
+        raise ValueError("Age cannot be negative.")
+except ValueError as raised_error:
+    # Catch the raised ValueError and print the error message
+    print("An error occurred: ", raised_error)
