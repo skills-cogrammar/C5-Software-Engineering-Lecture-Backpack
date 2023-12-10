@@ -4,4 +4,4 @@ Welcome to the C5 Software Engineering Lecture Backpack. This is where you will 
 
 To locate the content you are looking for, you can use the session the content was covered in as a reference. Each type of session has a directory in each Week containing the content of that session.
 
-For example the content that has been covered in Week 1 during the theory sessions will be located in the Theory directory which resides in the Week 1 directory.
+For example the content that has been covered in Week 1 during the theory sessions will be located in the Theory directory which resides in the Week 1 directory. The only exception is the Foundational Sessions which have their own dedicated folder.
