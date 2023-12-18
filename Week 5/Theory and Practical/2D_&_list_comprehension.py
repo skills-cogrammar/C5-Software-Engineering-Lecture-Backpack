@@ -29,7 +29,8 @@ In comparison to basic if/else statements, it is shorter and easier to read.
 """
 
 "x if condition else y"
-# Ternary operator example
+# Ternary operator example:
+#        True   |  Condition  | False 
 result = "Even" if 6 % 2 == 0 else "Odd"
 print(result)
 
