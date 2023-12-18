@@ -22,6 +22,18 @@ even_numbers = [x for x in range(10) if x % 2 == 0]
 
 # ------------------------------------------------------
 
+""" 
+Python's ternary operator (AKA 'conditional expression') is a neat way to express basic if/else statements in a 
+single line. It assesses a boolean condition and returns a true or false value.
+In comparison to basic if/else statements, it is shorter and easier to read.
+"""
+
+"x if condition else y"
+# Ternary operator example
+result = "Even" if 6 % 2 == 0 else "Odd"
+print(result)
+
+# ------------------------------------------------------
 
 # # Using a traditional for-loop
 squared_numbers = []
