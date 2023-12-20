@@ -1,24 +1,24 @@
-# """
-# Let's Generate a minesweeper grid!
-# """
+"""
+Let's Generate a minesweeper grid!
+"""
 
-# def initialize_grid(rows, cols):
-#     return [[' ' for _ in range(cols)] for _ in range(rows)]
+def initialize_grid(rows, cols):
+    return [[' ' for _ in range(cols)] for _ in range(rows)]
 
-# # numbers = ["Liano" for _ in range(5)]
-# # print(numbers)
+# numbers = ["Liano" for _ in range(5)]
+# print(numbers)
 
-# def display_board(grid):
-#     for row in grid:
-#         print(" | ".join(row))
-#         print("-" * (4 * len(row) - 1))
+def display_board(grid):
+    for row in grid:
+        print(" | ".join(row))
+        print("-" * (4 * len(row) - 1))
 
-# # Example usage
-# rows = 3
-# cols = 3
+# Example usage
+rows = 3
+cols = 3
 
-# minesweeper_grid = initialize_grid(rows, cols)
-# display_board(minesweeper_grid)
+minesweeper_grid = initialize_grid(rows, cols)
+display_board(minesweeper_grid)
 
 
 
