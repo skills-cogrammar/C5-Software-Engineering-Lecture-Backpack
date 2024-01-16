@@ -1,5 +1,4 @@
 # Creating strings
-
 single = 'Hello World!'
 double = "This is a string!"
 triple = """This is a 
@@ -31,6 +30,8 @@ multi-line string!"""
 
 # Strings are immutable
 # test_str[3] = "*"
+
+
 # test_str = test_str.replace("l", "*")
 # print(test_str)
 
@@ -44,31 +45,39 @@ multi-line string!"""
 # print(test_str.strip("*"))
 # print(test_str.split(","))
 
-# print(" ".join(["This", "is", "how", "use", "join!"]))
+# print(" ".join(["This", "is", "how", "you", "join!"]))
 
-
+test_str = "hello, world!"
 # Get character index
-# print(test_str.find("a"))
-# print(test_str.index("a"))
+# print(test_str.find("o"))
+# print(test_str.index("e"))
 
 
 # String checks
+
 # print(test_str.isnumeric())
 # print(test_str.isalpha())
 # print(test_str.islower())
 
 
-# Conditions
+# Comparison Operators
 # print("hello" == "hello")
-# print("hello" == "Hello")
-# print("a" < "b")
-# print('l' > 'g')
+# print("hello" != "Hello")
+# print("q" < "b") # ASCII
+# print('l' > 'g') # ASCII
 
 
 test_str = "hello world!"
 # Looping over strings
-# for i in range(len(test_str)):
-#     print(test_str[i])
+for i in range(1, len(test_str)):
+    print(test_str[i])
 
 # for letter in test_str:
 #     print(letter)
+
+
+
+
+range()
+len()
+enumerate()

@@ -26,14 +26,16 @@ my_dict_3 = {1 : "Hello",
 
 
 # Accessing values
-
+test_dict = {"name" : "Peter",
+             'age' : 20,
+             'scores' : [50, 75, 66, 67, 71]}
 
 # print(test_dict['name'])
 # print(test_dict['age'])
 # print(test_dict['scores'])
 
-
-# print(test_dict.get('name', "Nothing"))
+# print(test_dict.get('name')) # Peter or None if 'name' is not a key in the dictionary
+# print(test_dict.get('names', "Nothing"))
 # print(test_dict.get('ages', 0))
 # print(test_dict.get('scores', []))
 
@@ -64,10 +66,11 @@ my_dict_3 = {1 : "Hello",
 # value = test_dict.pop('name')
 # print(value)
 # print(test_dict)
-
+# print(test_dict)
 # test_dict.popitem()
 # print(test_dict)
 
+# print(test_dict)
 # test_dict.clear()
 # print(test_dict)
 

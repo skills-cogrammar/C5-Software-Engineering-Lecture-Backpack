@@ -1,26 +1,17 @@
-# Output
-
+# # # Output
 # print("Hello World")
 # print('This is how we can produce output through our console.')
 # print("""We can use this as a tool to comunicate with our users.""")
 
 
 
-
-
-# Input
+# # Input
 # name = input("Please enter your name: ")
 # print(name)
-# input("Would you like to continue? (y/n)\n")
+# stop = input("Would you like to continue? (y/n)\n")
 
 
-
-
-
-
-
-# Storing data
-
+# # Storing data
 name = "Jacob"
 surname = 'Brown'
 age = 25
@@ -29,60 +20,41 @@ has_license = True
 
 # print(name, surname, age, height, has_license)
 
-# output_str = f"Name:\t\t\t {name}\n"
-# output_str += f"Surname:\t\t {surname}\n"
-# output_str += f"Age:\t\t\t {age}\n"
-# output_str += f"Height:\t\t\t {height}\n"
-# output_str += f"Drivers License:\t {has_license}\n"
-# print("Hello!\t\t:")
-# print("Welcome!\t:")
+output_str = f"Name:\t\t\t {name}\n"
+output_str += f"Surname:\t\t {surname}\n"
+output_str += f"Age:\t\t\t {age}\n"
+output_str += f"Height:\t\t\t {height}\n"
+output_str += f"Drivers License:\t {has_license}\n"
+
+# print(output_str)
 
 
+# # Conditions
+# # Equal
+same_num = 5 == 5 # True
+same_word = "Welcome" == "welcome" #false
+
+# # Not Equal
+not_same_num = 4 != 2 # True
+not_same_word = "Hello" != "World" # True
+
+# # Greater/Less than
+is_larger = "Yes" if 10 > 5 else "no" # Ternary Operator [Yes]
+is_smaller = 3 < 9 #True
+
+is_larger_alpha = "z" > "z"
+is_smaller_alpha = "b" < "d"
+# print(is_larger_alpha, is_smaller_alpha)
+
+# # #Greater/Less than or Equal
+is_larger_equal = 9 >= 10
+is_smaller_equal = 6 >= 6
+
+is_larger_alpha = "z" >= "z"
+is_smaller_alpha = "d" <= "d"
 
 
-
-
-
-
-
-
-
-
-
-# Conditions
-# Equal
-same_num = 5 == 5
-same_word = "Welcome" == "welcome"
-
-# Not Equal
-not_same_num = 4 != 2
-not_same_word = "Hello" != "World"
-
-# Greater/Less than
-# is_larger = "Yes" if 10 > 5 else "no"
-# is_smaller = 3 < 9
-
-# is_larger_alpha = "z" > "z"
-# is_smaller_alpha = "b" < "d"
-
-
-# #Greater/Less than or Equal
-# is_larger_equal = 9 >= 10
-# is_smaller_equal = 6 >= 6
-
-# is_larger_alpha = "z" >= "z"
-# is_smaller_alpha = "d" <= "d"
-
-
-
-
-
-
-
-
-
-# if-elif-else
-
+# # if-elif-else
 # num = 5
 # if num >= 5:
 #     print(num)
@@ -101,24 +73,18 @@ not_same_word = "Hello" != "World"
 
 # age = int(input("Please enter your age: "))
 
-# if age < 13:
+
+# if age < 100:
+#     print("You are an adult.")
+# elif age < 13:
 #     print("You are a child.")
 # elif age < 18:
 #     print("You are a teenager.")
-# elif age < 100:
-#     print("You are an adult.")
 # else:
 #     print("You have reached the age of wisdom.")
 
 
-
-
-
-
-
-
-
-# Loops
+# # Loops
 # num = 10
 # while num > 5:
 #     print(num)
@@ -133,7 +99,7 @@ not_same_word = "Hello" != "World"
 #     print("Hello")
 
 
-num = 10
+# num = 10
 # while True:
 #     print(num)
 #     num -= 1
@@ -154,14 +120,6 @@ num = 10
 #         break
 #     else:
 #         print("No option selected.")
-
-
-
-
-
-
-
-
 
 
 # For loops
@@ -191,10 +149,21 @@ num = 10
 
 
 text = "This is a sentence."
-# print(f"Text: {text}")
-# user_letter = input("Please enter the letter you are looking for: ")
-# for i, letter in enumerate(text):
-#     if user_letter == letter:
-#         print(f"Text contains the letter '{user_letter}' at index {i}!")
-#         break
-print(text[12])
+print(f"Text: {text}")
+
+user_letter = input("Please enter the letter you are looking for: ")
+for i, letter in enumerate(text):
+    if user_letter == letter:
+        print(f"Text contains the letter '{user_letter}' at index {i}!")
+        break
+
+
+
+# Student Requests:
+# while True:
+#     print("loading...")
+
+# number = 13
+# while number > 10:
+#     print("Number is greater.")
+#     number -= 1
