@@ -1,0 +1,3 @@
+This is the first line.
+Python is amazing!
+Learning file handling is cool!.
