@@ -1,0 +1,2 @@
+"pika": 78, "squirtle": 87, "psyduck": 66
+"pika": 45, "squirtle": 56, "psyduck": 68
