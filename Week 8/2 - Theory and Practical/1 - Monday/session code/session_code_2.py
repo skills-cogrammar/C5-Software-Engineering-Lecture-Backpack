@@ -36,5 +36,5 @@ my_custom_library.dumbledore_said(user_statement)
 """
 1. Modularity - breaking down into smaller pieces
 2. Abstraction - Function hide the implementation details.
-3. Extension - libraries extend the capabilities of or programs
+3. Extension - libraries extend the capabilities of our programs
 """
