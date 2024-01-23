@@ -22,9 +22,9 @@ path = "example.txt"
 
 # with open(path, 'r') as example_file:
 #     print(f" read():\n{example_file.read()}\n")
-#     example_file.seek(0,0)
+#     example_file.seek(0)
 #     print(f" readlines():\n{example_file.readlines()}\n")
-#     example_file.seek(0,0)
+#     example_file.seek(0)
 #     print(f" readline():\n{example_file.readline()}")
 
 
