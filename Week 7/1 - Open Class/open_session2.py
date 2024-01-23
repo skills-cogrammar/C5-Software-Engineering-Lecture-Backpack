@@ -56,13 +56,18 @@ Iterate over a dictionary
 them like checking if some data matches there and then print a message?
 """
 
-with open(path, 'r') as example_file:
-    file_lines = example_file.readlines()
-    print("text_file_line: ", file_lines)
-    for item in file_lines:
-        words = item.split()
-        print("Words: ", words)
-        for item in range(len(words)):
-            print(words[3])
-            break
+# with open('seek.txt', 'r') as example_file:
+    # file_lines = example_file.readlines()
+    # print("text_file_line: ", file_lines)
+    # for item in file_lines:
+    #     words = item.split()
+    #     print("Words: ", words)
+    #     for item in range(len(words)):
+    #         print(words[3])
+    #         break
 
+
+with open("test.txt", "r+") as text_file:
+    text_file.write("This is line 1 of seek.txt\nThis is line 2\nAnd this is line 3")
+    contents = text_file.read()
+    print(contents)

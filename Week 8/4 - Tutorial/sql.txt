@@ -1,0 +1,67 @@
+-- Create a table:
+CREATE TABLE Students (
+    StudentID INT PRIMARY KEY, 
+    FirstName VARCHAR(40),
+    LastName VARCHAR(40),
+    Age INT,
+    Grade FLOAT
+); 
+
+-- Inserting values in to Students:
+INSERT INTO Students (StudentID, FirstName, LastName, Age, Grade)
+VALUES (0, "Jin", "Kazama", 23, 71.6),
+    (1,"Marshall", "Law", 36, 67.8 ),
+    (3, "Nina", "Williams", 40, 89.7);
+
+
+-- Selecting all rows from table
+-- SELECT * FROM Students;
+
+-- Selecting specific columns from rows that meet a condition:
+--SELECT FirstName 
+--FROM Students 
+--WHERE Grade > 70;
+
+-- UPDATING data in a table:
+UPDATE Students
+SET Grade = 90
+WHERE Grade < 70;
+
+--SELECT * 
+--FROM Students 
+--WHERE Grade > 70;
+
+/*for block comments*/
+
+
+
+-- Deleting data from a table:
+DELETE FROM Students
+WHERE StudentID = 0;
+
+-- SELECT * FROM Students;
+
+
+-- Drop:
+DROP TABLE Students;
+SELECT * FROM Students;
+INSERT INTO Students (StudentID, FirstName, LastName, Age, Grade)
+VALUES (0, "Jin", "Kazama", 23, 71.6),
+    (1,"Marshall", "Law", 36, 67.8 ),
+    (3, "Nina", "Williams", 40, 89.7);
+
+
+-- Truncate:
+-- TRUNCATE TABLE Students;
+
+
+
+-- Aggregate Functions:
+SELECT AVG(Grade) AS AvgGrade
+FROM Students;
+
+SELECT Min(Age) AS Youngest
+FROM Students;
+
+
+
