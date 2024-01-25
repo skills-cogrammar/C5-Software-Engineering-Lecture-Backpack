@@ -1,0 +1,4 @@
+pika, electric, 12, 34
+psyduck, water, 45, 23
+bulbasuar, grass, 90, 12
+sunflora, grass, 45, 12
