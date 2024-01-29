@@ -1,5 +1,6 @@
-Mecury
+Mercury
 Venus
+Liano
 Earth
 Mars
 Jupiter

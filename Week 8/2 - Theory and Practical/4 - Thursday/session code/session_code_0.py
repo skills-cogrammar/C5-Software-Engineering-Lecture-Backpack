@@ -1,20 +1,20 @@
-# # Reading from a sub-folder
+# # # Reading from a sub-folder
 # with open("sub-folder/cat_names.txt", 'r+') as cat_file_obj:
 #     print(cat_file_obj.read())
 
-# # Pass example
-# # with open("jedi.txt", "w+") as file_obj:
-# #     pass    # skips this body of code
+# # # Pass example
+# with open("jedi.txt", "w+") as file_obj:
+#     pass    # skips this body of code
 
-# # File Opening for writing
+# # # File Opening for writing
 # with open("sub-folder/jedi_new.txt", "w+") as jedi_file_obj:
 #     jedi_file_obj.write("Monty")
 
-# # File opening for appending
+# # # File opening for appending
 # with open("jedi.txt", "a+") as file_obj:
 #     file_obj.write("\nbeans")
 
-# # Write Data from input
+# # # Write Data from input
 # with open("sub-folder/cat_names.txt", "a+") as file_obj:
 #     user_prompt = input("What is your cats name ? ")
 #     file_obj.write(f"\n{user_prompt} is a tabby cat")
@@ -28,28 +28,30 @@
 # with open("sub-folder/jedi_new.txt", "w+") as jedi_file_obj:
 #     jedi_file_obj.writelines(["Monty", "Serge", "Pluto", "Beans"])
 
-# Overwrting data to text file
-new_clean_list = []
-with open("jedi.txt", "r+") as file_obj:
-    content = file_obj.readlines()
+# # # Overwrting data to text file
+# new_clean_list = []
+# with open("jedi.txt", "r+") as file_obj:
+#     content = file_obj.readlines()
 
-    print(content)
-    for line in content:
-        new_clean_list.append(line.strip())
+#     print(content)
+#     for line in content:
+#         new_clean_list.append(line.strip())
 
-print(new_clean_list)
+# print(new_clean_list)
 
-none_duplicate_list = list(set(new_clean_list))
+# none_duplicate_set = set(new_clean_list)
+# none_duplicate_list = list(none_duplicate_set)
 
-print(none_duplicate_list)
 
-# What if i want to create a new file everytime it runs
+# print(none_duplicate_list)
+
+# # What if i want to create a new file everytime it runs
 # with open("secret_secret_secret_pokemon.txt", "x") as file_obj:
 #     pass
 
-"""
-x - create an empty file to avoid accidentally overwriting the current file.
-"""
+# """
+# x - create an empty file to avoid accidentally overwriting the current file.
+# """
 
 # whenever we use readlines should we just put .seek in?
 # yes
@@ -61,15 +63,22 @@ x - create an empty file to avoid accidentally overwriting the current file.
 #     file_obj.write("Raikou")
 
 # use seek(-1) - we get a valueError
-# with open("jedi.txt", 'r+') as file:
-#     file.seek(-1)
-#     file.readline()
+with open("jedi.txt", 'r+') as file:
+    file.seek(5) # -> Current Position in file
+    print(file.readline())
+
+    file.seek(0) # File Pointer to beginning of file
+    print(file.readline())
+
+    file.seek(0, 2) # End of File
+    print("END",file.readline())
+    
 
 
 with open("planets.txt", 'w') as planet_file_object:
     print("MVEMJSUNP")
-    print("Mercury", file=planet_file_object)
-    print("Venus", file=planet_file_object)
+    print("Mercury\nVenus\nLiano", file=planet_file_object)
+    # print("Venus", file=planet_file_object)
     print("Earth", file=planet_file_object)
     print("Mars", file=planet_file_object)
     print("Jupiter", file=planet_file_object)
