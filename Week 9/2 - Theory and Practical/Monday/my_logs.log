@@ -1,0 +1,3 @@
+INFO:root:Calling file_opener @ line 118
+ERROR:root:The not_here.txt file was not found :( (line 117))
+ERROR:root:Log file does not exist
