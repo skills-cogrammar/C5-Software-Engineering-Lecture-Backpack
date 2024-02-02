@@ -229,7 +229,7 @@ def time_decorator(func):
 @time_decorator
 def slow_function():
     # some time-consuming task
-    time.sleep(6)	# waits 31 seconds
+    time.sleep(6)	# waits 6 seconds
 
 # Using the decorated function
 slow_function()
@@ -237,7 +237,7 @@ slow_function()
 # --- Alternative to above decorator implimentation
 def slow_function():
     # some time-consuming task
-    time.sleep(6)	# waits 31 seconds
+    time.sleep(6)	# waits 6 seconds
 
 # declare new decorated function
 function_duration = time_decorator(slow_function)
