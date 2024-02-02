@@ -43,10 +43,10 @@ How do we use '*args' and '**kwargs'	- Not reserved words. Can use any name, but
 # *args = variable arguments, ie. name, company, etc
 # **kwargs = variable keyword arguments, ie. name="John", company="Company Y"
 def triple(*args):
-    sum = 0
+    shoe_sum = 0
     for i in args:
-        sum += i
-    print(sum)
+        shoe_sum += i
+    print(shoe_sum)
 
 triple(1, 2, 3) 
 triple(9, 21, 40, 46)
