@@ -38,14 +38,16 @@ print(whiskers.scratch_furniture())
 # Get instances of Dog Class
 my_dogs = []
 buddy = Dog("Buddy")
-my_dogs.append("buddy")
+my_dogs.append(buddy)
 rex = Dog("Rex")
-my_dogs.append("rex")
+my_dogs.append(rex)
 amber = Dog("Amber")
-my_dogs.append("amber")
+my_dogs.append(amber)
 
 total_dogs = len(my_dogs)
 
+dogs_info = [dog.name for dog in my_dogs]
+print(dogs_info)
 """
 Multiple Inheritance Example
 """
