@@ -1,0 +1,3 @@
+Sherlock, sherlock_intro.txt
+MissMarple, miss_marple_intro.txt
+Poirot, poirot_intro.txt
