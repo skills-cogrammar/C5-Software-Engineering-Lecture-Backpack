@@ -89,7 +89,9 @@ Enter Repository Directory:
 > cd <repository_directory>
 Replace <repository_directory> with the name of the repository's directory.
 
-★ While in this folder, we now need to give an alias to the remote repository address
+★ While in this folder, we need to have an alias to the remote repository address
+★ During cloning, Git automatically sets up a remote named "origin" to point to the repository you cloned from
+★ There is thus no need for the below when creating the local repository from a clone 
 > git remote add my_remote <repository_url.git>
 
 ==> At this point the files in the directory will be listed, but if we change the content,
