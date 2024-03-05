@@ -1,0 +1,72 @@
+** Open Terminal in Visual Studio <View / Terminal OR use shortcut key Ctrl + `(~-key)
+
+===========  Adding NEW Remote Repository
+Create a Repository on GitHub:
+
+★ Go to GitHub and log in to your account.
+Click on the "+" icon in the top right corner and select "New repository."
+Fill in the repository name, description, and other options.
+Click the "Create repository" button.
+
+===========  To make changes to existing Remote Repository
+
+★ To make changes to a remote repository, we want the repository to look like a folder.
+★ First choose a folder on your pc
+
+Clone the Repository:
+★ Navigate to the directory where you want to clone the remote repository and run the following command:
+> git clone <repository_url>
+Replace <repository_url> with the actual repository_url you copied.
+
+Enter Repository Directory:
+★ Change into the newly cloned repository's directory 
+(This new folder would have been created in the folder where you were when you did the clone):
+
+> cd <repository_directory>
+Replace <repository_directory> with the name of the repository's directory.
+
+★ When in this folder it is NB to realise that there is no need for:
+> git init
+OR
+> git remote add origin <repository_url.git>
+
+The clone dealt with the commands above 
+
+==> At this point the files in the directory will be listed if we use dir or ls commands, 
+	but if we change the content, the changes will not be reported since the changes 
+	are not being monitored yet.
+	
+==> Make changes to the files by editing with any editor and add or delete files if you want.
+
+==> Adding a file to the Staging Environment. We can also call this the monitoring environment.
+★ To add a file to the staging environment, we use the git add command.
+> git add <filename>			# to add all files, use > git add .
+> git status					# This will show the status of the git folder you are in.
+
+==> Creating a Commit
+★ After we have updated files and add this to be committed (Staged the files), we can commit the changes.
+> git commit -m "<update message>"
+
+==> Push Changes to GitHub:
+★ Push your local repository to GitHub using the following commands:
+> git push -u origin main
+
+★ Verify on GitHub:
+Refresh the GitHub page for your repository, and you should see your code and commits reflected.
+
+==> Now make a change on GitHub as if someone else cloned and pushed changes
+If we now make changes on the local rep and try to push it to Github, the push will get a rejection.
+
+★ We now first need to pull the changes from GitHub to sinc the local and remote repositories.
+> git pull
+
+==> Follow editor to resolve conflicts, add commit messages and commit for local and remote
+==> See the circular arrows button to push 2 changes to GitHub
+
+★ Verify on GitHub:
+Refresh the GitHub page for your repository, and you should see your code and commits reflected.
+
+
+
+
+
