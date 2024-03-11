@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose a Sport</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        .sport-option {
+            display: inline-block;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #007bff;
+            font-size: 18px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .sport-option:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .sport-image {
+            max-width: 100px;
+            max-height: 100px;
+            display: block;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <header>Please choose a sport:</header>
+    <div class="sport-options">
+        <a href="assets/football.jpg" class="sport-option">
+            <img src="assets/football.jpg" alt="Football" class="sport-image">
+            Football
+        </a>
+        <a href="assets/golf.jpg" class="sport-option">
+            <img src="assets/golf.jpg" alt="Golf" class="sport-image">
+            Golf
+        </a>
+        <a href="assets/rugby.jpg" class="sport-option">
+            <img src="assets/rugby.jpg" alt="Rugby" class="sport-image">
+            Rugby
+        </a>
+        <a href="assets/tennis.jpg" class="sport-option">
+            <img src="assets/tennis.jpg" alt="Tennis" class="sport-image">
+            Tennis
+        </a>
+        <a href="assets/track.jpg" class="sport-option">
+            <img src="assets/track.jpg" alt="Track" class="sport-image">
+            Track
+        </a>
+    </div>
+</body>
+</html>
