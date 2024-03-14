@@ -1,0 +1,14 @@
+You can have a look at the below projects, by 
+* creating a folder on you pc with >mkdir <my-folder>
+* go into that folder with >cd <my-folder>
+* clone the project with >git clone <github-link>
+* enter the cloned project folder
+
+==> Demo 1
+https://github.com/Exxotelis/Generate-Invoices.git 
+
+==> Demo 2
+https://github.com/IrisWintermute/File-System.git
+
+==> Potential Commerce example as requested by learner
+https://github.com/Exxotelis/shop.git 
