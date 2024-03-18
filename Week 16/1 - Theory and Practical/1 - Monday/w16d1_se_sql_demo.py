@@ -165,6 +165,7 @@ use
 with sqlite3.connect('student_db.db') as db:  
 """
 with sqlite3.connect('student_db.db') as db:   
-
-    result = db.cursor().execute("SELECT * FROM students")
+    # Get a cursor object to run queries. 
+    cursor = db.cursor()
+    result = cursor.execute("SELECT * FROM students")
     print(result.fetchall())
