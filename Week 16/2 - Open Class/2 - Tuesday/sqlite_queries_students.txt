@@ -1,0 +1,60 @@
+/* ONLINE SQLite IDE - https://sqliteonline.com/
+
+/* Write the SQL code to create a table called students. */
+
+CREATE TABLE students(
+stu_num char(6) NOT NULL,
+stu_sname varchar(15) NOT NULL,
+stu_fname varchar(15),
+stu_initial char(1),
+stu_startdate date,
+course_code char(3),
+proj_num int(2),
+PRIMARY KEY (stu_num)
+);
+
+/* There is only one date format for sqlite. For any other date formats, store dates as TEXT and handle the format in your code.
+/* Write the SQL code to enter the first two rows of the table. */
+/* Generally date format is yyyy-mm-dd that resolves a lot of challenges with comparisons. */
+
+INSERT INTO students
+VALUES ('01', 'Snow', 'John', 'J', '2014-04-14', '201', 6);
+
+INSERT INTO students
+VALUES ('02', 'Stark', 'Arya', 'A', '2016-07-17', '305', 11);
+
+/* Write the SQL code that will list all attributes for a COURSE_CODE of 305. */
+
+Select * from students
+WHERE Course_Code = '305';
+
+/* Write the SQL code to change the course code to 304 for the person whose student number is 07. */
+
+UPDATE students
+SET course_code = '304'
+WHERE stu_num = '02';
+
+/* Write the SQL code to delete the row of the person named Jamie Lannister, who started on 5 September 2012, 
+   whose course code is 101 and project number is 2. 
+   Use logical operators to include all of the information given in this problem. */
+
+DELETE FROM students
+WHERE stu_sname = 'Stark' AND stu_fname = 'Arya';
+
+/* Write the SQL code that will change the PROJ_NUM to 14 for all those students who started 
+   before 1 January 2016 and whose course code is at least 201. */
+/* Equal (=) testing is less challenging since most data types can be tested for equal.
+   greater than, less than, etc needs more diligence when it comes to which types are chosen
+   and if the format has been stored correctly. */
+
+UPDATE students
+SET proj_num = 14
+WHERE stu_startdate < '2016-01-16' AND course_code >= '201';
+
+/* Write the SQL code that will delete all of the data inside a table, but not the table itself. */
+
+DELETE FROM students;
+
+/* Write the SQL code that will delete the Student table entirely. */
+
+DROP TABLE students;
