@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Welcome</title>
+        <link rel="stylesheet" href="{% static 'style/style.css' %}">
+    </head>
+
+    <body>
+        <div class="heading">
+            <h1>Welcome</h1>
+            <p>Welcome to my web app!</p>
+        </div>
+
+        <form action="welcome" method="get">
+            <div class="grid">
+                <label for="name" class="i1">Name</label>
+                <input type="text" name="name" autocomplete="off" class="i2"><br>
+                <label for="surname" class="i1">Surname</label>
+                <input type="text" name="surname" autocomplete="off" class="i2"><br>
+                <div class="i3"></div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </body>
+
+
+</html>

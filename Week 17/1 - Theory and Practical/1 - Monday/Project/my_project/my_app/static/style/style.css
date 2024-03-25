@@ -1,0 +1,20 @@
+.heading{
+    background-color: yellowgreen;
+}
+.grid {
+    display: grid;
+    column-gap: 10px;
+}
+
+.i1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+.i2 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+.i3 {
+    grid-column-start: 3;
+    grid-column-end: 13;
+}
