@@ -1,0 +1,14 @@
+{% extends 'header.html' %}
+{% block content %}
+<form action="register_user" method="post">
+    <label>Username:</label>
+    <input type="text" name="username" placeholder="E.g. Peter">
+    <select name="sport" style="width: 100px;">
+        <option disabled selected>Sport</option>
+        {% for sport in sports %}
+        <option value="{{ sport }}">{{ sport }}</option>
+        {% endfor %}
+    </select>
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}

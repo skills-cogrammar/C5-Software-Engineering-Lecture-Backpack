@@ -1,0 +1,30 @@
+.welcome {
+    color: forestgreen;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.userTable {
+    border-collapse: collapse;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+tr:nth-child(even) {
+    background-color: #4dd5d5;
+    border-top: 1px rgb(15, 14, 14);
+    border-bottom: 1px rgb(15, 14, 14);
+  }
+
+td {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+.first {
+    border-right: 1px solid black;
+}
+
+th {
+    width: 150px;
+}

@@ -1,0 +1,19 @@
+.item {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.item img {
+    max-width: 100%;
+    height: auto;
+}
+.item-title {
+    font-weight: bold;
+    margin-top: 10px;
+}
+.item-price {
+    color: green;
+    margin-top: 5px;
+}

@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>User list</title>
+        <link rel="stylesheet" href="{% static 'style/welcome.css' %}">
+    </head>
+
+    <body>
+        <img src="{% static 'assets/Banner.png' %}" alt="Website Banner." width="1000" height="500">
+        <h1 class="welcome"><u>Here is the list of registered users with their sport selections:</u></h1><br>
+        <div>
+            <table class="userTable" style="border: 1px;">
+                <tr>
+                    <th class="first"><b>Username</b></th>
+                    <th class="first"><b>Sport</b></th>
+                    <th><b>Date Registered</b></th>
+                </tr>
+                {% for user in users %}
+                <tr>
+                    <td class="first">{{ user.username }}</td>
+                    <td class="first">{{ user.sport }}</td>
+                    <td>{{ user.date_registered | date:"d-m-y" }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+            
+             
+        </div>
+    </body>
+
+
+</html>
