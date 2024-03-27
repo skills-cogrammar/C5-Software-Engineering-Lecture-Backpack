@@ -1,0 +1,5 @@
+Here are the portfolios we had a look at.
+
+https://github.com/jason-erasmus/flask-sqlalchemy-top-10-movies	JE23110010872	Jason Erasmus
+https://github.com/3le81/python_course/tree/master/gaming_system	EP23120011930	Elena Pagano
+https://github.com/3le81/python_course/tree/master/contact_book_task	EP23120011930	Elena Pagano
